@@ -19,11 +19,12 @@
 
 /* Header, navigation bar */
 
-.header {
+/* .navbar {
   justify-content: space-around;
   z-index: 10;
-  position: fixed;
+  position: fixed!important; 
   background-color: whitesmoke;
+  flex-direction: row;
 }
 
 .menu-icon {
@@ -34,14 +35,28 @@
 .menu-icon:hover {
 	width: var(--icon-width);
   height: var(--icon-width);
-  align-items: center;
 }
-
-
 
 .nav-icon {
   width: var(--icon-width);
   opacity: 0.5;
+} */
+
+/* .navbar-expand-lg{
+  justify-content: space-around!important;
+} */
+
+/* .navbar-collpase, .navbar, .collapse {
+  flex-direction: row;
+  justify-content: space-around;
+} */
+
+.navbar-nav {
+  flex-direction: row!important;
+}
+
+.navbar-dark .nav-item:active .nav-link:active {
+  color:white!important;
 }
 
 
