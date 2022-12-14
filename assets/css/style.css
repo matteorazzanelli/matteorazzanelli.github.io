@@ -57,6 +57,14 @@
 
 }
 
+/* Skills */
+.skill-picture {
+  width:100px;
+}
+.cpp-bg {
+  /* background-color: rgb(19, 19, 170); */
+}
+
 /* Projects */
 .project-card{
   box-shadow: var(--radius) var(--radius) 10px var(--radius) lightgray;
