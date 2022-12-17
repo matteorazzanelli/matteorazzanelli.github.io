@@ -22,7 +22,7 @@
 
   <!-- BODY -->
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -40,7 +40,7 @@
     </nav>
 
     <main>
-      <section class="section bio" id="bio">
+      <section class="section bio container" id="bio">
         <!-- <h1>Bio</h1> -->
         <div class="bio-content">
           <img class="profile-picture" src="assets/img/profile-photo.png">
@@ -79,93 +79,153 @@
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   
       <section class="section" id="skills">
-        <h1>Skills</h1>
-        <div class="container text-center">
-          <h2>Programming language</h2>
-          <div class="row align-items-center p-2">
+        <!-- <h1>Skills</h1> -->
+
+        <div class="container">
+          <h2 style="justify-content: left;">(Programming) Languages</h2>
+          <div class="row text-center p-1">
             <!--C++-->
-            <div class="col-md-7 cpp-bg">
-              <img class="skill-picture" src="assets/img/cat.jpg">
-              <div class="tooltip-5k">Over 5000 lines</div>
+            <div class="col-md-7 cpp-bg no-bs-tooltip">
+              <img class="skill-picture" src="assets/img/skills/c++.png">
+              <div class="tooltip-text">Over 5000 lines</div>
             </div>
             <!--Py-->
-            <div class="col-md-5 py-bg tooltip-5k">
-              <img class="skill-picture" src="assets/img/dog.jpg">
-              <div class="tooltip-5k">Over 5000 lines</div>
+            <div class="col-md-5 py-bg no-bs-tooltip">
+              <img class="skill-picture" src="assets/img/skills/python.png">
+              <div class="tooltip-text">Over 5000 lines</div>
             </div>
           </div>
-          <div class="row align-items-center p-2">
-            <!--Mat-->
-            <div class="col-md-4 py-bg tooltip-1k">
-              <img class="skill-picture" src="assets/img/dog.jpg">
-              <div class="tooltip-1k">Over 1000 lines</div>
-            </div>
+          <div class="row text-center p-1">
             <!--Solidity-->
-            <div class="col-md-2 cpp-bg">
-              <img class="skill-picture" src="assets/img/cat.jpg">
-              <div class="tooltip-familiar">Under 1000 lines</div>
-            </div>
-            <!--HTML-->
-            <div class="col-md-2 py-bg">
-              <img class="skill-picture" src="assets/img/dog.jpg">
-              <div class="tooltip-familiar">Under 1000 lines</div>
+            <div class="col-md-2 solidity-bg no-bs-tooltip">
+              <img class="skill-picture" src="assets/img/skills/solidity.png">
+              <div class="tooltip-text">Under 1000 lines</div>
             </div>
             <!--CSS-->
-            <div class="col-md-2 py-bg">
-              <img class="skill-picture" src="assets/img/dog.jpg">
-              <div class="tooltip-familiar">Under 1000 lines</div>
+            <div class="col-md-2 css-bg no-bs-tooltip">
+              <img class="skill-picture" src="assets/img/skills/css.png">
+              <div class="tooltip-text">Under 1000 lines</div>
             </div>
-            <!--PLC-->
-            <div class="col-md-2 py-bg">
-              <img class="skill-picture" src="assets/img/dog.jpg">
-              <div class="tooltip-familiar">Under 1000 lines</div>
+            <!--Mat-->
+            <div class="col-md-4 matlab-bg no-bs-tooltip">
+              <img class="skill-picture" src="assets/img/skills/matlab.png">
+              <div class="tooltip-text">Over 1000 lines</div>
+            </div>
+            <!--HTML-->
+            <div class="col-md-2 html-bg no-bs-tooltip">
+              <img class="skill-picture" src="assets/img/skills/html.png">
+              <div class="tooltip-text">Under 1000 lines</div>
+            </div>
+            <!--JS-->
+            <div class="col-md-2 js-bg no-bs-tooltip">
+              <img class="skill-picture" src="assets/img/skills/javascript.png">
+              <div class="tooltip-text">Under 1000 lines</div>
             </div>
           </div>
         </div>
-      </section>
-  
-  
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  
-      <section class="section" id="projects">
-        <h1>Projects</h1>
+
         <div class="container">
-          <div class="row">
-            <div class="col-4 project-card">
-              <img class="project-picture img-fluid" src="assets/img/cat.jpg" alt="cat-image">
-              <div class="project-summary">
-                <img class="project-code-picture img-thumbnail" src="assets/img/dog2.jpg">
-                <p class="project-name">Oliver</p>
+          <h2 style="justify-content: left;">Tools and framework</h2>
+          <div id="my-pie-chart-container">
+            <div id="my-pie-chart"></div>
+            <div id="legenda">
+              <div class="entry">
+                <div style="background-color: var(--color-ros);" class="entry-color"></div>
+                <div><img class="tools-img" src="assets/img/tools/ros.png"></div>
               </div>
-              <p class="project-brief">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo nisi. Phasellus vitae mi urna. Etiam nec</p>
-              <button class="btn btn-secondary">See details</button>
+              <div class="entry">
+                <div style="background-color: var(--color-django);" class="entry-color"></div>
+                <div><img class="tools-img" src="assets/img/tools/django_2.png"></div>
+              </div>
+              <div class="entry">
+                <div style="background-color: var(--color-docker)" class="entry-color"></div>
+                <div><img class="tools-img" src="assets/img/tools/docker.png"></div>
+              </div>
+              <div class="entry">
+                <div style="background-color: var(--color-redis)" class="entry-color"></div>
+                <div><img class="tools-img" src="assets/img/tools/redis.png"></div>
+              </div>
+              <div class="entry">
+                <div style="background-color: var(--color-pytorch)" class="entry-color"></div>
+                <div><img class="tools-img" src="assets/img/tools/pytorch.png"></div>
+              </div>
+              <div class="entry">
+                <div style="background-color: var(--color-mongodb)" class="entry-color"></div>
+                <div><img class="tools-img" src="assets/img/tools/mongodb.png"></div>
+              </div>
+              <div class="entry">
+                <div style="background-color: var(--color-gitlab)" class="entry-color"></div>
+                <div><img class="tools-img" src="assets/img/tools/gitlabcicd.png"></div>
+              </div>
             </div>
-            <div class="col-4 project-card">
-              <img class="project-picture img-fluid" src="assets/img/cat.jpg" alt="cat-image">
-              <div class="project-summary">
-                <img class="project-code-picture img-thumbnail" src="assets/img/dog2.jpg">
-                <p class="project-name">Oliver</p>
-              </div>
-              <p class="project-brief">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo nisi. Phasellus vitae mi urna. Etiam nec</p>
-              <button class="btn btn-secondary">See details</button>
+          </div>
+        </div>
+
+      </section>
+  
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+      <section class="section container" id="projects">
+        <h1>Personal and academic projects</h1>
+        <div class="row" style="display: flex; justify-content: center;">
+          <div class="col-4 project-card">
+            <div class="project-picture-container">
+              <img class="project-picture" src="assets/img/projects/mpc.png" alt="mpc-image">
             </div>
-            <div class="col-4 project-card">
-              <img class="project-picture img-fluid" src="assets/img/cat.jpg" alt="cat-image">
-              <div class="project-summary">
-                <img class="project-code-picture img-thumbnail" src="assets/img/dog2.jpg">
-                <p class="project-name">Oliver</p>
-              </div>
-              <p class="project-brief">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo nisi. Phasellus vitae mi urna. Etiam nec</p>
-              <button class="btn btn-secondary">See details</button>
+            <div class="project-summary">
+              <img class="project-code-picture" src="assets/img/skills/c++.png">
+              <div class="project-name">MPC library</div>
             </div>
-            <div class="col-4 project-card">
-              <img class="project-picture img-fluid" src="assets/img/cat.jpg" alt="cat-image">
-              <div class="project-summary">
-                <img class="project-code-picture img-thumbnail" src="assets/img/dog2.jpg">
-                <p class="project-name">Oliver</p>
-              </div>
-              <p class="project-brief">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo nisi. Phasellus vitae mi urna. Etiam nec</p>
-              <button class="btn btn-secondary">See details</button>
+            <div class="project-brief">
+              Comparison of pid, pure-pursuit and Model Predictive Control (OSQP library) in a unicycle and bicyle model in several scenarios.
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/matteorazzanelli/mpc" class="btn btn-secondary">See details</a>
+            </div>
+          </div>
+          <div class="col-4 project-card">
+            <div class="project-picture-container">
+              <img class="project-picture" src="assets/img/projects/dt.jpeg" alt="dt-image">
+            </div>
+            <div class="project-summary">
+              <img class="project-code-picture" src="assets/img/skills/python.png">
+              <div class="project-name">Self-Driving Cars with Duckietown</div>
+            </div>
+            <div class="project-brief">
+              Comparison of pid, pure-pursuit and Model Predictive Control (OSQP library) in a unicycle and bicyle model in several scenarios.
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/matteorazzanelli/DT-01x" class="btn btn-secondary">See details</a>
+            </div>
+          </div>
+          <div class="col-4 project-card">
+            <div class="project-picture-container">
+              <img class="project-picture" src="assets/img/projects/blockchain.jpg" alt="blockchain-image">
+            </div>
+            <div class="project-summary">
+              <img class="project-code-picture" src="assets/img/skills/solidity.png">
+              <div class="project-name">Start2Impact Blockchain project</div>
+            </div>
+            <div class="project-brief">
+              Comparison of pid, pure-pursuit and Model Predictive Control (OSQP library) in a unicycle and bicyle model in several scenarios.
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/matteorazzanelli/blockchain-final-project" class="btn btn-secondary">See details</a>
+            </div>
+          </div>
+          <div class="col-4 project-card">
+            <div class="project-picture-container">
+              <img class="project-picture" src="assets/img/projects/drone.png" alt="drone-image">
+            </div>
+            <div class="project-summary">
+              <img class="project-code-picture" src="assets/img/skills/matlab.png">
+              <div class="project-name">Simulate a UAV with Matlab and Python</div>
+            </div>
+            <div class="project-brief">
+              Work in progres ...
+            </div>
+            <div class="project-footer">
+              <a href="#" class="btn btn-secondary">See details</a>
             </div>
           </div>
         </div>
@@ -174,29 +234,49 @@
   
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   
-      <section class="section" id="work-experience">
-        <h1>Experience</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed leo nisi. Phasellus vitae mi urna. Etiam nec consectetur sem, ut tincidunt velit. Donec blandit lorem sed tempus lobortis. Nunc nec purus ut ex luctus mollis non sit amet arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam ut fermentum neque, eget suscipit nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a posuere nisi, eleifend lobortis mauris. Mauris dignissim magna ac lectus sodales vehicula. Vivamus tincidunt libero ut venenatis tempor.</p>
+      <section class="section container" id="work-experience">
+        <h1>Work experience</h1>
+        <div class="row experience-container">
+          <div class="experience-entry">
+            <div class="experience-data">November 2018 - Today</div>
+              <div class="experience-title">
+                <span style="background-color: lightgray; font-weight: 500; font-size: large;"> Robotics Engineer | Proxima Robotics s.r.l.</span>
+              </div>
+              <div class="experience-brief">
+                <div>
+                  <img class="experience-icon" src="assets/img/experience/proxima.png" alt="proxima-experience">
+                </div>
+                <div class="experience-description">
+                  I have responsibilities to both commercial and R&D parts.
+                  <ul>
+                    <li>Led the development and system integration (mechanical, electronical,  software) of a remotely guided vehicle for outdoor environment.</li>
+                    <li>Developed an optimal coverage path planning algorithm for a floor scrubber system in C++ and Python</li>
+                    <li>Led market researches; written business, marketing plans and pitches; managed economic accounts</li>
+                    <li>Leading the project management of a new autonomous floor scrubber robot</li>
+                </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </section>
   
   
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   
-      <section class="section contact-form container-fluid" id="contact">
+      <section class="section contact-form container" id="contact">
         <h1>Contact</h1>
         <form action="" method="post" class="contact-form">
-          <div class="form-row container-fluid">
-            <label for="first-name">First name</label>
-            <input id="first-name" name="first-name" type="text">
-            <label for="second-name">Second name</label>
-            <input id="second-name" name="second-name" type="text">
+          <div class="form-row text-center">
+            <input id="first-name" name="first-name" type="text" placeholder="First name">
+            <input id="second-name" name="second-name" type="text" placeholder="Second name">
           </div>
   
-          <div class="form-row container-fluid">
-            <label for="request">Request</label>
+          <div class="form-row text-center">
             <textarea id="request" name="request" placeholder="Why are you contacting me?"></textarea>
           </div>
-          <div class="form-row container-fluid">
+          <div class="form-row text-center">
             <button class="btn btn-primary">Submit</button>
           </div>
         </form>
