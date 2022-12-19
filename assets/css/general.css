@@ -1,0 +1,26 @@
+/* General properties */
+:root{
+  --icon-width: 80px;
+  --radius: 8px;
+  --color-ros: rgb(27,42,72);
+  --color-django: rgb(23,66,51);
+  --color-docker: rgb(53,145,220);
+  --color-redis: rgb(181,34,22);
+  --color-pytorch: rgb(241,117,91);
+  --color-mongodb: rgb(42,164,78);
+  --color-gitlab: rgb(248,162,38);
+  --color-header-footer: rgb(62, 146, 204);
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  /* border: 1px solid blue; */
+}
+
+.section {
+  padding: 100px 0px 10px 0px;
+}
+
+
+

@@ -1,0 +1,74 @@
+/* Skills */
+.skill-picture {
+  width:80px;
+  height: 80px;
+  margin: 5px;
+}
+.cpp-bg {background-image: linear-gradient(to right, rgb(24,68,130), rgb(80,131,173));}
+.py-bg {background-image: linear-gradient(to right, rgb(80,131,173), rgb(250,214,55));}
+.js-bg {background-image: linear-gradient(to left, rgb(250,214,55), rgb(242,196,38));}
+.html-bg {background-image: linear-gradient(to left, rgb(242,196,38), rgb(229,139,80));}
+.matlab-bg {background-image: linear-gradient(to left, rgb(229,139,80), rgb(57,148,240));}
+.css-bg {background-image: linear-gradient(to left, rgb(57,148,240), rgb(25, 79, 155));}
+.solidity-bg {background-image: linear-gradient(to left, rgb(25, 79, 155),  rgb(57, 56, 55));}
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.no-bs-tooltip .tooltip-text {
+  position: inherit;
+  background-color: rgb(100, 100, 100);
+  color: white;
+  font-weight: 500;
+  padding: 4px 8px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  border-radius: 5px;
+}
+.no-bs-tooltip:hover .tooltip-text {
+  opacity: 1;
+}
+
+/* Tool and framework pie chart */
+#my-pie-chart-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+#my-pie-chart {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--color-ros) 14%,
+    var(--color-django) 14% 25%,
+    var(--color-docker) 25% 42%,
+    var(--color-redis) 42% 50%,
+    var(--color-pytorch) 50% 60%,
+    var(--color-mongodb) 60% 70%,
+    var(--color-gitlab) 70%
+  );
+}
+#legenda {
+  margin-left: 20px;
+  background-color: white;
+  padding: 5px;
+}
+.entry {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+.entry-color {
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+}
+.tools-img {
+  margin-left: 5px;
+  width: 100px;
+  height: 35px;
+}

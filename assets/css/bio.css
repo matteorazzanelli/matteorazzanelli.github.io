@@ -1,0 +1,18 @@
+/* Bio */
+.bio-content {
+  display: flex;
+  justify-content: space-around;
+}
+.profile-description {
+
+}
+.profile-picture {
+  height: 300px;
+  border-radius: 50%;
+  align-self: center;
+  border: 8px solid var(--color-header-footer);
+}
+.profile-description > p > a {
+  display: block!important;
+
+}
