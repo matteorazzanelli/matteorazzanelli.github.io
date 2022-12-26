@@ -2,9 +2,9 @@
 .navbar {
   background-color: var(--color-header-footer);
 }
-.navbar-nav {
+/* .navbar-nav {
   flex-direction: row!important;
-}
+} */
 .navbar-dark .nav-item:active .nav-link:active {
   color:white!important;
 }

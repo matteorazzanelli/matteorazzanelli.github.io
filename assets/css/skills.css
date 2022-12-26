@@ -5,8 +5,8 @@
   margin: 5px;
 }
 .cpp-bg {background-image: linear-gradient(to right, rgb(24,68,130), rgb(80,131,173));}
-.py-bg {background-image: linear-gradient(to right, rgb(80,131,173), rgb(250,214,55));}
-.js-bg {background-image: linear-gradient(to left, rgb(250,214,55), rgb(242,196,38));}
+.py-bg {background-image: linear-gradient(to right, rgb(80,131,173), rgb(170, 148, 47));}
+.js-bg {background-image: linear-gradient(to left, rgb(170, 148, 47), rgb(242,196,38));}
 .html-bg {background-image: linear-gradient(to left, rgb(242,196,38), rgb(229,139,80));}
 .matlab-bg {background-image: linear-gradient(to left, rgb(229,139,80), rgb(57,148,240));}
 .css-bg {background-image: linear-gradient(to left, rgb(57,148,240), rgb(25, 79, 155));}
@@ -71,4 +71,16 @@
   margin-left: 5px;
   width: 100px;
   height: 35px;
+}
+
+.skill-name {
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@media (max-width: 750px) {
+  .skill-container {
+    margin: 10px;
+  }
 }
