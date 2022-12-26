@@ -57,4 +57,7 @@
     width: 50px;
     visibility: hidden;
   }
+  .project-card {
+    margin-left: auto;
+  }
 }
